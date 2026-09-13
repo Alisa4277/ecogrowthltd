@@ -1,0 +1,57 @@
+/* =========================================================
+   ECOGROWTH LTD — Responsive Rules
+   ========================================================= */
+
+@media (max-width: 1024px){
+  .service-grid{grid-template-columns:repeat(2,1fr);}
+  .pricing-grid{grid-template-columns:repeat(2,1fr);}
+  .project-grid{grid-template-columns:repeat(2,1fr);}
+  .ghlist-grid{grid-template-columns:1fr;}
+  .split{gap:40px;}
+  .contact-grid{gap:36px;}
+  .calculator{grid-template-columns:1fr;}
+}
+
+@media (max-width: 860px){
+  .nav-links,.nav-cta .btn-primary{display:none;}
+  .nav-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;color:var(--forest);}
+  .nav-toggle i{font-size:20px;}
+
+  .highlight-bar{grid-template-columns:repeat(2,1fr);}
+  .highlight-bar__item:nth-child(2){border-right:none;}
+  .highlight-bar__item{border-bottom:1px solid rgba(18,59,42,0.08);}
+
+  .split,.contact-grid{grid-template-columns:1fr;}
+  .split-media{order:2;min-height:340px;margin-top:20px;}
+  .why-media{min-height:300px;order:2;}
+  .split.why-choose > div:first-child{order:2;}
+
+  .service-grid,.pricing-grid,.project-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:30px;}
+}
+
+@media (max-width: 767px){
+  .hero{min-height:58vh;padding-top:0;}
+  .hero__content{padding-bottom:36px;}
+  .hero__actions{margin-top:20px;}
+  .hero__actions .btn{flex:1 1 100%;justify-content:center;}
+}
+
+@media (max-width: 560px){
+  .container{padding:0 18px;}
+  .section{padding:64px 0;}
+  h1{font-size:2.1rem;}
+  h2{font-size:1.6rem;}
+  .hero{min-height:58vh;}
+  .hero__content{padding-bottom:30px;}
+  .hero__actions .btn{flex:1;justify-content:center;}
+  .highlight-bar{grid-template-columns:1fr;margin-top:-40px;border-radius:16px;}
+  .highlight-bar__item{border-right:none;}
+  .price-card--featured{margin-top:14px;}
+  .modal__specs{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;gap:34px;text-align:left;}
+  .calculator{padding:24px;}
+  .form-row{grid-template-columns:1fr;}
+  .wa-float{width:52px;height:52px;bottom:18px;right:18px;}
+  .page-hero{padding-top:calc(var(--nav-h) + 60px);}
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — ECOGROWTH LTD</title>
+<meta name="description" content="A portfolio of greenhouse construction, installation and shade-net projects completed by ECOGROWTH LTD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="icon" href="assets/icons/favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+<div class="mobile-panel" id="mobilePanel">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="quote.html" class="btn btn-primary" style="margin-top:10px;">Request a Quote</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero__bg">
+    <img src="assets/images/project.jpg" alt="Completed greenhouse project">
+  </div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Projects</div>
+    <h1 style="color:#fff;">Projects We've Built</h1>
+    <p style="max-width:560px;color:#e3ede6;">A look at greenhouse and shade-net structures completed for farmers across Kenya.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="greenhouses">Greenhouses</button>
+      <button class="filter-btn" data-filter="shade-net">Shade Net</button>
+      <button class="filter-btn" data-filter="installation">Installation</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+      <!-- Cards are rendered here by assets/js/projects.js from the PROJECTS array -->
+    </div>
+  </div>
+</section>
+
+<div class="modal-overlay" id="projectModal">
+  <div class="modal">
+    <button class="modal__close" id="modalClose" aria-label="Close">&times;</button>
+    <div class="modal__media"><img id="modalImage" src="" alt=""></div>
+    <div class="modal__body">
+      <div class="eyebrow" id="modalCategory"></div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <div class="modal__specs">
+        <div><span>Location</span><strong id="modalLocation"></strong></div>
+        <div><span>Type</span><strong id="modalType"></strong></div>
+        <div><span>Dimensions</span><strong id="modalDimensions"></strong></div>
+        <div><span>Status</span><strong>Completed</strong></div>
+      </div>
+      <a href="quote.html" class="btn btn-primary">Start a Similar Project →</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">ECOGROWTH LTD</div>
+        <p style="max-width:280px;">Building Better Growing Spaces.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/1MWiVUWvfa/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.tiktok.com/@josphat.kweri?_t=ZM-903UpSBOBei&_r=1" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/josphatkweri?igsh=MTFmaTQ0bmYyZnphNg==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/posts/shiva-trippathi-91b22a46_the-biggest-wealth-gap-isnt-money-its-activity-7375415387393499136-qEYc" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="quote.html">Request a Quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>0711672001 / 0726085241</li>
+          <li>WhatsApp: 0711672001</li>
+          <li>ecogrowthltd@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 ECOGROWTH LTD. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="https://wa.me/254711672001?text=Hello%20ECOGROWTH%20LTD%2C%20I%20would%20like%20to%20inquire%20about%20a%20greenhouse%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp" style="font-size:30px;"></i>
+</a>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/projects.js"></script>
+</body>
+</html>
