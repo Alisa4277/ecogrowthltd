@@ -176,7 +176,7 @@ p{margin:0 0 1em;color:#40493f;}
   border-radius:8px;background:rgba(255,255,255,0.1);
 }
 
-/* ---------- Hero ---------- */
+/* ---------- Hero ----------
 .hero{
   position:relative;
   min-height:92vh;
@@ -203,6 +203,7 @@ p{margin:0 0 1em;color:#40493f;}
 
 .opacity-in{opacity:0;transform:translateY(18px);animation:opIn .7s ease forwards;}
 @keyframes opIn{to{opacity:1;transform:translateY(0);}}
+*/
 
 /* ---------- Highlight bar ---------- */
 .highlight-bar{
